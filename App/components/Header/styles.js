@@ -1,10 +1,10 @@
 import {StyleSheet} from 'react-native';
-import {greyBGColor, whiteColor} from '../../global';
 
 const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    paddingBottom: 30,
   },
   row: {flexDirection: 'row'},
   locationIcon: {textAlignVertical: 'center'},

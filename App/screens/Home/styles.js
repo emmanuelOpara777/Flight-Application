@@ -1,10 +1,10 @@
 import {StyleSheet} from 'react-native';
-import {greyBGColor, whiteColor} from '../../global';
+import {greyColor, whiteColor, lightGreyColor} from '../../global';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: greyBGColor,
+    backgroundColor: greyColor,
     padding: 10,
     paddingTop: 25,
   },
@@ -16,6 +16,17 @@ const styles = StyleSheet.create({
     padding: 15,
   },
   row: {flexDirection: 'row'},
+  spaceBetween: {justifyContent: 'space-between'},
+
+  filterIcon: {
+    textAlignVertical: 'center',
+    backgroundColor: whiteColor,
+    elevation: 4,
+    borderRadius: 10,
+    marginLeft: 15,
+    paddingRight: 10,
+    paddingLeft: 10,
+  },
 });
 
 export default styles;
