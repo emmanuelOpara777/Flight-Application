@@ -1,9 +1,16 @@
 import React, {useState} from 'react';
-import {View, Text, TextInput, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
 import EntypoIcon from 'react-native-vector-icons/Entypo';
 
 import Header from '../../components/Header';
 import SearchInput from '../../components/SearchInput';
+import FlightDetails from '../../components/FlightDetails';
 import styles from './styles';
 import {greyColor, primary} from '../../global';
 
@@ -31,7 +38,7 @@ const Home = () => {
             style={styles.filterIcon}
             name="sound-mix"
             color={greyColor}
-            size={25}
+            size={20}
           />
         </View>
         <View style={[styles.row, styles.spaceBetween, styles.options]}>
@@ -59,6 +66,11 @@ const Home = () => {
             );
           })}
         </View>
+        <ScrollView
+          contentContainerStyle={styles.scrollView}
+          showsVerticalScrollIndicator={false}>
+          {activeScreen === 'Flights' ? <FlightDetails /> : null}
+        </ScrollView>
       </View>
     </View>
   );
