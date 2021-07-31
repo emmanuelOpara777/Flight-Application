@@ -16,7 +16,7 @@ const SearchInput = () => {
         placeholder="Search"
         onChangeText={search => setSearch(search)}
       />
-      <TouchableOpacity onPress={() => console.log('Search Pressed')}>
+      <TouchableOpacity onPress={() => console.log('Search Pressed', search)}>
         <EntypoIcon
           style={styles.searchIcon}
           name="magnifying-glass"

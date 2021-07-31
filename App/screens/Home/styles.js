@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
   },
   row: {flexDirection: 'row'},
   spaceBetween: {justifyContent: 'space-between'},
-
   filterIcon: {
     textAlignVertical: 'center',
     backgroundColor: whiteColor,
@@ -27,6 +26,9 @@ const styles = StyleSheet.create({
     paddingRight: 10,
     paddingLeft: 10,
   },
+  options: {paddingTop: 15, paddingBottom: 15},
+  optionText: {fontWeight: 'bold', margin: 0},
+  dot: {textAlign: 'center', marginVertical: -5},
 });
 
 export default styles;
