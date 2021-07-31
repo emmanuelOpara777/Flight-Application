@@ -34,7 +34,9 @@ const Flight = ({flight}) => {
         </View>
         <View style={styles.imageWrapper}>
           <Image
-            source={require('../../images/emma.jpg')}
+            source={{
+              uri: flight.airLineImage,
+            }}
             style={styles.airlineImage}
           />
         </View>

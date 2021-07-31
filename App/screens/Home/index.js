@@ -30,6 +30,8 @@ const Home = () => {
         duration: '2Hours 18 minutes',
         destinationCode: 'BKK',
         availableSites: '14 Remaining',
+        airLineImage:
+          'https://d24ndt2yiijez0.cloudfront.net/uploads/carrier/logo/218/british-airways-logo.jpg',
       },
       {
         airport: 'Thailand Airport',
@@ -41,6 +43,7 @@ const Home = () => {
         duration: '2Hours 18 minutes',
         destinationCode: 'SDY',
         availableSites: '16 Remaining',
+        airLineImage: 'http://eastways.co/logo/Logo.jpg',
       },
     ]);
 
