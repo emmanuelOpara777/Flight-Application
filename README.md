@@ -1,4 +1,4 @@
-# user_story flight application
+# User story flight application
 ## Currently, the flight screen is completed.
 
 ## To test if development environment is setup:
